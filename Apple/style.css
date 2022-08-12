@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1000px;
+}
+
+.logo img {
+    width: 92.5px;
+    height: 24px;
+    padding-right: 23px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    height: 68px;
+    background-color: black;
+}
+
+.nav_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 13.5px;
+}
+
+.nav_menu li {
+    padding-left: 20px;
+}
+
+.my_menu {
+    display: flex;
+}
+
+.my_menu button {
+    width: 40px;
+    height: 40px;
+    padding: 1px 6px;
+    margin-right: 5px;
+    border: none;
+    background: none;
+}
+
+.my_menu button i {
+    font-size: 20px;
+    color: white;
+}
+
+.my_menu button:hover {
+    cursor: pointer;
+}
