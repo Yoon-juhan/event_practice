@@ -4,6 +4,9 @@ const navMenu = document.querySelector(".nav_menu");
 const menuBtnArrow = document.querySelector(".menu_btn_arrow");
 const profileBtn = document.querySelector(".profile_btn");
 const profileBtnArrow = document.querySelector(".profile_btn .fa-caret-down");
+const searchBtn_icon = document.querySelector(".search_btn .fa-magnifying-glass");
+const searchBtn = document.querySelector(".search_btn");
+const searchInput = document.querySelector(".search_text");
 
 
 // toggle > navMenu 클래스에 active가 없으면 추가, 있으면 제거한다.
@@ -22,15 +25,23 @@ profileBtn.addEventListener("click", () => {
     profileBtnArrow.classList.toggle("active")
 })
 
-nav.addEventListener("scroll", scroll());
 
+window.addEventListener("scroll", function scroll() {
 
-function scroll() {
-    if (window.scrollY >= 100) {
-        nav.style.background = "black";
-    } else {
+    const scrollY = this.scrollY;
+
+    if (scrollY < 100) {
         nav.style.background = "";
+    } else {
+        nav.style.background = "black";
+        nav.style.transition = "0.8s";
     }
-
     console.log(scrollY);
+});
+
+searchBtn_icon.addEventListener("click", search);
+
+function search() {
+    searchBtn.classList.toggle("active");
+    searchInput.classList.toggle("active");
 }
