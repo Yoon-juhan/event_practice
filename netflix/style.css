@@ -1,13 +1,22 @@
+:root {
+    --text-color: white;
+    --background-color: black;
+}
+
 body {
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 1000px;
 }
 
 .logo img {
+    position: absolute;
     width: 92.5px;
     height: 24px;
     padding-right: 23px;
+    top: 22px;
 }
 
 .nav {
@@ -16,13 +25,15 @@ body {
     justify-content: space-between;
     padding: 0 4%;
     height: 68px;
-    background-color: black;
+    position: fixed;
+    width: 92%;
 }
 
 .nav_menu {
     display: flex;
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .nav_menu a {
@@ -31,8 +42,14 @@ body {
     font-size: 13.5px;
 }
 
+
 .nav_menu li {
     padding-left: 20px;
+}
+
+.nav_menu li:hover {
+    opacity: 0.7;
+    transition-duration: 0.5s;
 }
 
 .my_menu {
@@ -55,4 +72,84 @@ body {
 
 .my_menu button:hover {
     cursor: pointer;
+}
+
+.menu_btn {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    left: 130px;
+    display: none;
+}
+
+.menu_btn_arrow {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    top: 66px;
+    left: 191px;
+    transform: rotate(180deg);
+    display: none;
+}
+
+button.profile_btn {
+    position: relative;
+}
+
+button.profile_btn .fa-caret-down {
+    position: absolute;
+    left: 35px;
+    font-size: 15px;
+    transition-duration: 0.8s;
+}
+
+button.profile_btn .fa-caret-down.active {
+    rotate: 180deg;
+    /* transition-duration: 0.8s; */
+}
+
+
+
+
+/* 창 너비가 좁아지면 재배치 */
+@media screen and (max-width: 900px) {
+
+    .nav_menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        top: 80px;
+        left: 70px;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid rgba(124, 122, 122, 0.5);
+        border-top: 2px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .nav_menu a {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .nav_menu li {
+        padding: 10px;
+    }
+
+    .nav_menu li:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+    }
+
+    .menu_btn {
+        display: block;
+    }
+
+    .nav_menu.active {
+        display: block;
+        transition: all 1s;
+    }
+
+    .menu_btn_arrow.active {
+        display: block;
+    }
 }
