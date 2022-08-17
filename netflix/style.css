@@ -110,6 +110,10 @@ button.profile_btn .fa-caret-down.active {
     rotate: 180deg;
 }
 
+.search_box {
+    position: relative;
+}
+
 button.search_btn {
     transition-duration: 0.3s;
 }
@@ -124,8 +128,8 @@ button.search_btn.active {
 
 button input {
     position: absolute;
-    top: 25px;
-    width: 190px;
+    top: 13px;
+    width: 180px;
     height: 15px;
     margin-left: 10px;
     font-size: 15px;
@@ -146,6 +150,79 @@ button input::placeholder {
 .search_text.active {
     display: inline;
 }
+
+.searchX {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    color: white;
+    display: none;
+}
+
+.searchX.active {
+    display: inline;
+}
+
+.alarm_box {
+    position: relative;
+    display: none;
+}
+
+.alarm_box.active {
+    display: block;
+}
+
+.alarm_btn.active {
+    scale: 1.2;
+}
+
+.alarm_menu {
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-top: 3px solid rgba(255, 255, 255, 0.8);
+    right: 8px;
+    top: 38px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    list-style: none;
+    /* flex-direction: column; */
+}
+
+.alarm_menu a {
+    width: 100%;
+    height: auto;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    display: flex;
+}
+
+.alarm_menu_contents {
+    display: flex;
+    padding: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    width: 370px;
+    height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.alarm_menu_contents img {
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.alarm_box .fa-caret-down {
+    position: absolute;
+    color: white;
+    right: 20px;
+    top: 44px;
+    rotate: 180deg;
+}
+
 
 /* 창 너비가 좁아지면 재배치 */
 @media screen and (max-width: 910px) {

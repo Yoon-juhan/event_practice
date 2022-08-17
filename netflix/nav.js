@@ -7,7 +7,10 @@ const profileBtnArrow = document.querySelector(".profile_btn .fa-caret-down");
 const searchBtn_icon = document.querySelector(".search_btn .fa-magnifying-glass");
 const searchBtn = document.querySelector(".search_btn");
 const searchInput = document.querySelector(".search_text");
-
+const searchX = document.querySelector(".searchX");
+const alarmBox = document.querySelector(".alarm_box");
+const alarmMenuContents = document.querySelector(".alarm_menu_contents");
+const alarmBtn = document.querySelector(".alarm_btn");
 
 // toggle > navMenu 클래스에 active가 없으면 추가, 있으면 제거한다.
 menuBtn.addEventListener("click", () => {
@@ -36,7 +39,6 @@ window.addEventListener("scroll", function scroll() {
         nav.style.background = "black";
         nav.style.transition = "0.8s";
     }
-    console.log(scrollY);
 });
 
 searchBtn_icon.addEventListener("click", search);
@@ -44,4 +46,12 @@ searchBtn_icon.addEventListener("click", search);
 function search() {
     searchBtn.classList.toggle("active");
     searchInput.classList.toggle("active");
+    searchX.classList.toggle("active");
+}
+
+alarmBtn.addEventListener("click", openAlarmMenu);
+
+function openAlarmMenu() {
+    alarmBox.classList.toggle("active");
+    alarmBtn.classList.toggle("active");
 }
