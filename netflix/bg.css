@@ -6,7 +6,7 @@ body {
 .background {
     position: relative;
     width: 100%;
-    z-index: -10;
+    z-index: 5;
 }
 
 .bg img {
@@ -27,7 +27,7 @@ body {
 
 .bg_title p {
     margin: 0;
-    color: white;
+    color: rgb(235, 235, 235);
     width: 100%;
     font-size: 1.2vw;
     margin-bottom: 15px;
@@ -59,6 +59,7 @@ body {
 .bg_buttons .start_btn {
     width: 27%;
     padding-left: 7%;
+    background-color: white;
 }
 
 .bg_buttons .detail_btn {
@@ -66,4 +67,33 @@ body {
     padding-left: 8%;
     color: white;
     background-color: rgba(100, 100, 100, 0.7);
+}
+
+.start_btn:hover {
+    cursor: pointer;
+    background-color: rgba(220, 220, 220, 0.9);
+}
+
+.detail_btn:hover {
+    cursor: pointer;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.age_box {
+    position: absolute;
+    width: 6.5%;
+    right: 0%;
+    top: 61%;
+    border-left: 0.3vw solid rgba(220, 220, 220, 0.9);
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+.number_box {
+    width: 37%;
+    background-color: rgb(255, 196, 0);
+    border-radius: 15%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-left: 14%;
+    text-align: center;
 }
