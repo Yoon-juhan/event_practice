@@ -3,13 +3,6 @@
     --background-color: black;
 }
 
-body {
-    margin: 0;
-    background-image: url(images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1000px;
-}
 
 .logo img {
     position: absolute;
@@ -27,6 +20,7 @@ body {
     height: 68px;
     position: fixed;
     width: 92%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 
 .nav_menu {
@@ -35,18 +29,23 @@ body {
     padding-left: 0;
     margin: 0;
     position: absolute;
-    left: 165px;
+    left: 167px;
+    top: 21px;
 }
 
 .nav_menu a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 13.5px;
+}
+
+.nav_menu .home {
+    color: white;
 }
 
 
 .nav_menu li {
-    padding-left: 20px;
+    padding-left: 19px;
 }
 
 .nav_menu li:hover {
@@ -99,11 +98,16 @@ button.profile_btn {
     position: relative;
 }
 
+.profile_btn img {
+    border-radius: 3px;
+}
+
 button.profile_btn .fa-caret-down {
     position: absolute;
-    left: 35px;
+    left: 45px;
+    top: 10px;
     font-size: 15px;
-    transition-duration: 0.8s;
+    transition-duration: 0.3s;
 }
 
 button.profile_btn .fa-caret-down.active {
@@ -180,7 +184,7 @@ button input::placeholder {
     position: absolute;
     width: 400px;
     height: 550px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-top: 3px solid rgba(255, 255, 255, 0.8);
     right: 8px;
     top: 38px;
@@ -207,7 +211,7 @@ button input::placeholder {
     font-size: 14px;
     width: 370px;
     height: 60px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .alarm_menu_contents img {
@@ -217,11 +221,106 @@ button input::placeholder {
 
 .alarm_box .fa-caret-down {
     position: absolute;
-    color: white;
-    right: 20px;
-    top: 44px;
+    color: rgba(255, 255, 255, 0.8);
+    right: 18px;
+    top: 41px;
     rotate: 180deg;
+    font-size: 22px;
 }
+
+.profile_box {
+    position: relative;
+    display: none;
+}
+
+.profile_box.active {
+    display: block;
+}
+
+.profile_box ul {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+}
+
+.profile_menu {
+    position: absolute;
+    width: 230px;
+    height: auto;
+    right: 7px;
+    top: 45px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.profile_menu li {
+    padding: 10px;
+}
+
+.profile_menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.profile_menu a:hover {
+    text-decoration: underline;
+}
+
+.people text:hover {
+    text-decoration: underline;
+}
+
+.people {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.people img {
+    border-radius: 3px;
+    /* padding-right: 10px; */
+    margin-right: 13px;
+}
+
+.people text {
+    position: absolute;
+    top: 22px;
+    width: 175px;
+}
+
+.profile_box .fa-caret-down {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    right: 16px;
+    top: 45px;
+    rotate: 180deg;
+    font-size: 22px;
+}
+
+.profile_management {
+    padding: 10px 0;
+}
+
+.profile_management i {
+    font-size: 19px;
+    margin-left: 9px;
+    width: 36px;
+    height: auto;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.logout {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px 0;
+}
+
+
+
+
+
 
 
 /* 창 너비가 좁아지면 재배치 */

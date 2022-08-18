@@ -11,6 +11,7 @@ const searchX = document.querySelector(".searchX");
 const alarmBox = document.querySelector(".alarm_box");
 const alarmMenuContents = document.querySelector(".alarm_menu_contents");
 const alarmBtn = document.querySelector(".alarm_btn");
+const profileBox = document.querySelector(".profile_box");
 
 // toggle > navMenu 클래스에 active가 없으면 추가, 있으면 제거한다.
 menuBtn.addEventListener("click", () => {
@@ -54,4 +55,10 @@ alarmBtn.addEventListener("click", openAlarmMenu);
 function openAlarmMenu() {
     alarmBox.classList.toggle("active");
     alarmBtn.classList.toggle("active");
+}
+
+profileBtn.addEventListener("click", openProfileBox);
+
+function openProfileBox() {
+    profileBox.classList.toggle("active");
 }

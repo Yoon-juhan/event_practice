@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bg.css">
     <script src="https://kit.fontawesome.com/0d82d229a5.js" crossorigin="anonymous"></script>
     <title>netflix</title>
 </head>
@@ -21,7 +22,7 @@
         </div>
 
         <ul class="nav_menu">
-            <li><a href="#">홈</a></li>
+            <li><a href="#" class="home">홈</a></li>
             <li><a href="#">시리즈</a></li>
             <li><a href="#">영화</a></li>
             <li><a href="#">NEW! 요즘 대세 콘텐츠</a></li>
@@ -69,15 +70,51 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <button class="profile_btn"><i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-caret-down"></i></button>
+            <button class="profile_btn"><img src="images/profile_icon.jpg" alt="">
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="profile_box">
+                <i class="fa-solid fa-caret-down"></i>
+                <ul class="profile_menu">
+                    <div class="people">
+                        <a href="#">
+                            <li><img src="images/profile_icon.jpg" alt=""><text>윤주한</text></li>
+                        </a>
+                    </div>
+                    <div class="profile_management">
+                        <a href="#">
+                            <li><i class="fa-solid fa-user-pen"></i>프로필 관리</li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-solid fa-user"></i>계정</li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-solid fa-circle-question"></i>고객 센터</li>
+                        </a>
+                    </div>
+                    <div class="logout">
+                        <a href="#">
+                            <li>넷플릭스에서 로그아웃</li>
+                        </a>
+                    </div>
+                </ul>
             </div>
         </div>
 
         <button class="menu_btn">메뉴 <i class="fa-solid fa-caret-down"></i></button>
         <div class="menu_btn_arrow"><i class="fa-solid fa-caret-down"></i></div>
     </nav>
+
+    <!-- ********************************************************************************************************************* -->
+    <div class="background">
+        <div class="bg">
+            <img src="images/cover.jpg" alt="">
+        </div>
+        <div class="bg_title">
+            <img src="images/bg_title.jpg" alt="">
+        </div>
+    </div>
+
 
     <script src="nav.js"></script>
 </body>
