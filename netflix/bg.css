@@ -1,7 +1,4 @@
 body {
-    /* background-image: url(images/cover.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; */
     margin: 0;
     height: 1000px;
 }
@@ -16,9 +13,57 @@ body {
     width: 100%;
 }
 
-.bg_title img {
+.bg_title {
     position: absolute;
     width: 36%;
     top: 24.5%;
     left: 4%;
+}
+
+.bg_title img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.bg_title p {
+    margin: 0;
+    color: white;
+    width: 100%;
+    font-size: 1.2vw;
+    margin-bottom: 15px;
+}
+
+.bg_buttons button {
+    font-size: 1.3vw;
+    padding: 2.5% 0;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.bg_buttons i {
+    position: absolute;
+    font-size: 150%;
+}
+
+.start_btn i {
+    left: 20%;
+}
+
+.detail_btn i {
+    left: 17%;
+}
+
+.bg_buttons .start_btn {
+    width: 27%;
+    padding-left: 7%;
+}
+
+.bg_buttons .detail_btn {
+    width: 36%;
+    padding-left: 8%;
+    color: white;
+    background-color: rgba(100, 100, 100, 0.7);
 }
