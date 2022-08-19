@@ -33,9 +33,9 @@ profileBtn.addEventListener("click", () => {
 window.addEventListener("scroll", function scroll() {
 
     const scrollY = this.scrollY;
-
+    console.log(scrollY);
     if (scrollY < 100) {
-        nav.style.background = "";
+        nav.style.background = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))";
     } else {
         nav.style.background = "black";
         nav.style.transition = "0.8s";
