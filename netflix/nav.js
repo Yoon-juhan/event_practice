@@ -26,7 +26,7 @@ navMenu.addEventListener("mouseleave", () => {
 })
 
 profileBtn.addEventListener("click", () => {
-    profileBtnArrow.classList.toggle("active")
+    profileBtnArrow.classList.toggle("active");
 })
 
 
